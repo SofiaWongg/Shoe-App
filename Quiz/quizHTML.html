@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoe Finder Quiz</title> <!--this is only on the tab of the page-->
+        <link rel="stylesheet" type="text/css" href="quiz.css">
+    </head>
+    <body>
+        <h1>
+            Now let's figure out what kind of shoe will work best for you.
+        </h1>
+        <h1>
+            I will start by asking you a few questions!
+        </h1>
+        <h2>
+            When it comes to price, how much are you willing to spend on your new shoes?
+        </h2>
+
+        <div class="tab">
+            <div class="box" id="100">     </div>
+            <div class="box" id="130">    </div>
+            <div class="box" id="150">    </div>
+            <div class="box" id="160">    </div>
+          </div>
+          
+          <div class="tab2">
+            <button onclick="priceRange('100');">$100 and below</button>
+            <button onclick="priceRange('120');">$130</button>
+            <button onclick="priceRange('140');">$150</button>
+            <button onclick="priceRange('160');">$160 or more</button>
+          </div>
+
+          <h2>Next Question! What type of cusion do you preffer?</h2>
+          <div class="tab">
+            <div class="box" id="minimal">     </div>
+            <div class="box" id="light">    </div>
+            <div class="box" id="medium">    </div>
+            <div class="box" id="heavy">    </div>
+          </div>
+          
+          <div class="tab2">
+            <button onclick="priceRange('minimal');">$100 and below</button>
+            <button onclick="priceRange('light');">$130</button>
+            <button onclick="priceRange('medium');">$150</button>
+            <button onclick="priceRange('heavy');">$160 or more</button>
+          </div>
+
+    </body>
+</html>
