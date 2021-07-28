@@ -25,22 +25,20 @@
 //very simple: 3 questions - 
 
 function priceRange(max){
-    alert("Start");
+
+    let ide = document.getElementById("100");
+    alert(ide);
+    ide.style.backgroundColor = blue;
 
     for (let i = 0; i < shoes.length; i++){
-        alert("enter loop")
-        alert(max)
         if (max == 100) {
             //for every shoe
-            alert("in!");
-            alert(shoes[i].price);
             if (shoes[i].price <= 100){
-                shoes[i].push("price");
+                //something with pushing price onto array wasn't working: shoes[i].pros.push("price");
             }
             if (shoes[i].price > 100) {
                 shoes[i].score = shoes[i].score - 1;
-                shoes[i].cons.push("price");
-                alert(shoes[i].score);
+                //something with pushing price onto array wasn't working                
             }
             if (shoes[i].price > 130) {
                 shoes[i].score = shoes[i].score - 1;
@@ -48,22 +46,18 @@ function priceRange(max){
             if (shoes[i].price > 150) {
                 shoes[i].score = shoes[i].score - 1;
             }
-            alert(shoes[i].score);
         } 
     }
-
-    /** 
+     
     for (const shoe in shoes) {
-        alert("Enter loop");
-        alert(shoe.price)//gives me undifined
         if (max == "100") {
             //for every shoe
             if (shoe.price <= 100){
-                shoe.push("price");
+                //shoe.push("price");
             }
             if (shoe.price > 100) {
                 shoe.score = shoe.score - 1;
-                shoe.cons.push("price")
+               // shoe.cons.push("price")
             }
             if (shoe.price > 130) {
                 shoe.score = shoe.score - 1;
@@ -74,14 +68,13 @@ function priceRange(max){
         }        
 
         if (price == "130") {
-            alert("130");
             //for every shoe
             if (shoe.price <= 130){
-                shoe.push("price");
+                //shoe.push("price");
             }
             if (shoe.price > 130) {
                 shoe.score = shoe.score - 1;
-                shoe.cons.push("price")
+                //shoe.cons.push("price")
             }
             if (shoe.price > 150) {
                 shoe.score = shoe.score - 1;
@@ -89,24 +82,21 @@ function priceRange(max){
         }
 
         if (price == "150") {
-            alert("150");
             if (shoe.price <= 150){
-                shoe.push("price");
+                //shoe.push("price");
             }
             if (shoe.price > 150) {
                 shoe.score = shoe.score - 1;
-                shoe.cons.push("price")
+                //shoe.cons.push("price")
             }
         }
 
         if (price == "160") {
-            alert("160");
-            shoe.pro.push("price")
+            //shoe.pro.push("price")
         }
     }
 }
-*/
-}
+
 
 function changecell(id, color)
 {
