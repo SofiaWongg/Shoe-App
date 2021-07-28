@@ -18,8 +18,6 @@
   let BrooksGhost = new Shoe("Ghost", "Brooks", 130, "medium");
   
   const shoes = [HokaBondi, BrooksGhost];
-  
-
 
 //open page 
 //make a different function for each question?
@@ -27,11 +25,38 @@
 //very simple: 3 questions - 
 
 function priceRange(max){
-    alert("kjahgsokhasl")
-    let chosen = document.getElementById(max);
-    chosen.style.backgroundColor = blue;
+    alert("Start");
+
+    for (let i = 0; i < shoes.length; i++){
+        alert("enter loop")
+        alert(max)
+        if (max == 100) {
+            //for every shoe
+            alert("in!");
+            alert(shoes[i].price);
+            if (shoes[i].price <= 100){
+                shoes[i].push("price");
+            }
+            if (shoes[i].price > 100) {
+                shoes[i].score = shoes[i].score - 1;
+                shoes[i].cons.push("price");
+                alert(shoes[i].score);
+            }
+            if (shoes[i].price > 130) {
+                shoes[i].score = shoes[i].score - 1;
+            }
+            if (shoes[i].price > 150) {
+                shoes[i].score = shoes[i].score - 1;
+            }
+            alert(shoes[i].score);
+        } 
+    }
+
+    /** 
     for (const shoe in shoes) {
-        if (max = "100") {
+        alert("Enter loop");
+        alert(shoe.price)//gives me undifined
+        if (max == "100") {
             //for every shoe
             if (shoe.price <= 100){
                 shoe.push("price");
@@ -46,9 +71,10 @@ function priceRange(max){
             if (shoe.price > 150) {
                 shoe.score = shoe.score - 1;
             }
-        }
+        }        
 
-        if (price = "130") {
+        if (price == "130") {
+            alert("130");
             //for every shoe
             if (shoe.price <= 130){
                 shoe.push("price");
@@ -62,7 +88,8 @@ function priceRange(max){
             }
         }
 
-        if (price = "150") {
+        if (price == "150") {
+            alert("150");
             if (shoe.price <= 150){
                 shoe.push("price");
             }
@@ -72,10 +99,19 @@ function priceRange(max){
             }
         }
 
-        if (price = "160") {
+        if (price == "160") {
+            alert("160");
             shoe.pro.push("price")
         }
     }
+}
+*/
+}
+
+function changecell(id, color)
+{
+  let a = document.getElementById(id);
+  a.style.backgroundColor = color;
 }
    
 
