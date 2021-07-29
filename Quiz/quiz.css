@@ -1,8 +1,4 @@
-.tab{
-    display: table;
-    width: 100%;
-    border-spacing:1.5em;
-  }
+
   
   .tab2{
     display: table;
@@ -19,7 +15,9 @@
   
   button{
     display: table-cell;
+    padding:5em;
     width: 20%;
+    border:black 1px solid;
   }
   h1{
     text-align: center;
