@@ -26,10 +26,11 @@
 
 function priceRange(max){
 
+    // CANT GET COLOR TO CHANGE 
     let ide = document.getElementById("100");
     alert(ide);
     ide.style.backgroundColor = blue;
-
+    
     for (let i = 0; i < shoes.length; i++){
         if (max == 100) {
             //for every shoe
@@ -96,15 +97,6 @@ function priceRange(max){
         }
     }
 }
-
-
-function changecell(id, color)
-{
-  let a = document.getElementById(id);
-  a.style.backgroundColor = color;
-}
-   
-
 
 //More cushion or less cushion
 
