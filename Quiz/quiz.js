@@ -47,62 +47,143 @@ function priceRange(max){
             if (shoes[i].price > 150) {
                 shoes[i].score = shoes[i].score - 1;
             }
-        } 
-    }
-     
-    for (const shoe in shoes) {
-        if (max == "100") {
-            //for every shoe
-            if (shoe.price <= 100){
-                //shoe.push("price");
-            }
-            if (shoe.price > 100) {
-                shoe.score = shoe.score - 1;
-               // shoe.cons.push("price")
-            }
-            if (shoe.price > 130) {
-                shoe.score = shoe.score - 1;
-            }
-            if (shoe.price > 150) {
-                shoe.score = shoe.score - 1;
-            }
-        }        
+        }
 
-        if (price == "130") {
+        if (max == 130) {
             //for every shoe
-            if (shoe.price <= 130){
-                //shoe.push("price");
+            if (shoes[i].price <= 130){
+                //something with pushing price onto array wasn't working: shoes[i].pros.push("price");
             }
-            if (shoe.price > 130) {
-                shoe.score = shoe.score - 1;
-                //shoe.cons.push("price")
+            if (shoes[i].price > 130) {
+                shoes[i].score = shoes[i].score - 1;
+                //something with pushing price onto array wasn't working                
             }
-            if (shoe.price > 150) {
-                shoe.score = shoe.score - 1;
+            if (shoes[i].price > 150) {
+                shoes[i].score = shoes[i].score - 1;
             }
         }
 
-        if (price == "150") {
-            if (shoe.price <= 150){
-                //shoe.push("price");
+        if (max == 150) {
+            //for every shoe
+            if (shoes[i].price <= 150){
+                //something with pushing price onto array wasn't working: shoes[i].pros.push("price");
             }
-            if (shoe.price > 150) {
-                shoe.score = shoe.score - 1;
-                //shoe.cons.push("price")
+            if (shoes[i].price > 150) {
+                shoes[i].score = shoes[i].score - 1;
+                //something with pushing price onto array wasn't working                
             }
         }
 
-        if (price == "160") {
-            //shoe.pro.push("price")
+        if (max == 160) {
+            //Basixally do nothing
         }
     }
 }
 
 //More cushion or less cushion
 
-function cushion (level){
+function cushion(level){
+    alert("enter function");
+    for (let i = 0; i < shoes.length; i++){
+        alert(level);
+        if (level == "minimal") {
+            //for every shoe
+            alert(shoe[i].cushion);
+            if (shoes[i].cushion.equals("minimal")){
+                //push cshion level on pro 
+            }
+            if (shoes[i].cushion.equals("light")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cushion level on to con              
+            }
+            if (shoes[i].cushion.equals("medium")) {
+                shoes[i].score = shoes[i].score - 2;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("heavy")) {
+                shoes[i].score = shoes[i].score - 3;
+                //push cushion level on to con
+            }
+        }
 
+        if (level.equals("light")) {
+            //for every shoe
+            alert(shoe[i].cushion);
+            if (shoes[i].cushion.equals("minimal")){
+                shoes[i].score = shoes[i].score - 1;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("light")) {
+                //push cshion level on pro               
+            }
+            if (shoes[i].cushion.equals("medium")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("heavy")) {
+                shoes[i].score = shoes[i].score - 2;
+                //push cushion level on to con
+            }
+        }
+
+        if (level.equals("medium")) {
+            //for every shoe
+            alert(shoe[i].cushion)
+            if (shoes[i].cushion.equals("minimal")){
+                shoes[i].score = shoes[i].score - 2;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("light")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cshion level on con              
+            }
+            if (shoes[i].cushion.equals("medium")) {
+                //push cushion level on to pro
+            }
+            if (shoes[i].cushion.equals("heavy")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cushion level on to con
+            }
+        }
+
+        if (level.equals("medium")) {
+            //for every shoe
+            alert(shoe[i].cushion);
+            if (shoes[i].cushion.equals("minimal")){
+                shoes[i].score = shoes[i].score - 2;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("light")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cshion level on con              
+            }
+            if (shoes[i].cushion.equals("medium")) {
+                //push cushion level on to pro
+            }
+            if (shoes[i].cushion.equals("heavy")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cushion level on to con
+            }
+        }
+
+        if (level.equals("heavy")) {
+            //for every shoe
+            alert(shoe[i].cushion);
+            if (shoes[i].cushion.equals("minimal")){
+                shoes[i].score = shoes[i].score - 3;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("light")) {
+                shoes[i].score = shoes[i].score - 2;
+                //push cshion level on con              
+            }
+            if (shoes[i].cushion.equals("medium")) {
+                shoes[i].score = shoes[i].score - 1;
+                //push cushion level on to con
+            }
+            if (shoes[i].cushion.equals("heavy")) {
+                //push cushion level on to pros
+            }
+        }
+    }
 }
-
-
-//
